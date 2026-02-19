@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shanthi Jeevan Evangelical Mission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,400;1,700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="page-header"
+            style="background-image: linear-gradient(rgba(11, 37, 69, 0.85), rgba(11, 37, 69, 0.75)), url('images/tailoring.jpeg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p style="color: rgba(255,255,255,0.8);">We'd Love to Hear From You</p>
+            </div>
+        </section>
+
+        <section id="contact-form" style="padding: 80px 0;">
+            <div class="container">
+                <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+                    <!-- Contact Info -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="color: var(--color-primary-blue); margin-bottom: 30px;">Get in Touch</h2>
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="margin-bottom: 10px; color: var(--color-primary-gold);">Address</h4>
+                            <p>Shanthi Jeevan Evangelical Mission<br>
+                                5/265A, Kotaibyrahalli, Solaikottai (PO),<br>
+                                Dharmapuri, Tamil Nadu, India - 636704</p>
+                        </div>
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="margin-bottom: 10px; color: var(--color-primary-gold);">Phone</h4>
+                            <p>+91 8903550483<br>+91 9443428502</p>
+                        </div>
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="margin-bottom: 10px; color: var(--color-primary-gold);">Email</h4>
+                            <p>shanthijeevanevangelical@gmail.com</p>
+                        </div>
+
+                        <div style="margin-top: 40px;">
+                            <h4 style="margin-bottom: 15px;">Follow Us</h4>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#"
+                                    style="width: 40px; height: 40px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); transition: 0.3s;"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <!-- Contact Form -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <form id="contactForm" action="https://formspree.io/f/mbdakvog" method="POST"
+                            style="background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-soft);">
+
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Your Name</label>
+                                <input type="text" name="name" placeholder="Your Name"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"
+                                    required>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email
+                                    Address</label>
+                                <input type="email" name="email" placeholder="Your Mail"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"
+                                    required>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Phone
+                                    Number</label>
+                                <input type="tel" name="phone" placeholder="Your Phone Number"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"
+                                    pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+                            </div>
+
+                            <div style="margin-bottom: 30px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
+                                <textarea name="message" rows="5" placeholder="Write your message here..."
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Thank You Modal -->
+                    <div class="modal" id="thankyouModal">
+                        <div class="modal-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h2>Thank You!</h2>
+                            <p>Your message has been sent successfully.<br>We will get back to you soon.</p>
+                            <button onclick="closeModal()">Close</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Placeholder -->
+        <section>
+            <div class="container">
+                <h2 style="color: var(--color-primary-blue); margin-bottom: 30px;"><i
+                        style="color: var(--color-primary-gold);" class="fas fa-map-marker-alt"></i> Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.4565971617344!2d78.23537!3d12.149286599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac15b03cf25975%3A0xc85339da116b11f7!2sSHANTHI%20JEEVAN%20EVANGELICAL%20MISSION!5e0!3m2!1sen!2sin!4v1770188930249!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        </br>
+        </br>
+    </main>
+
+    <footer></footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
